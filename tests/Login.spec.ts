@@ -1,23 +1,22 @@
 import { test, expect } from '@playwright/test';
 
-test('TC01 - Login Happy Path', async ({ page }) => {
-
-    //Paso #1: Abrir la url de la página a testear
+test('TC01 - Successful user login', async ({ page }) => {
+    // Step #1: Open the application URL
     await page.goto('https://practicesoftwaretesting.com/');
 
-    //Validar que el titulo corresponda al de la página que se solicitó abrir
+    // Validate that the page title is correct
     await expect(page).toHaveTitle(/Practice Software Testing - Toolshop - v5.0/);
 
-    //Paso #2: Clic en la opción "Iniciar sesión"
+   // Step #2: Click the "Sign in" option
     await page.getByTestId('nav-sign-in').click();
 
-    //Paso #3: Llenar los campos de "Dirección de correo electrónico" y "Contraseña"
+   // Step #3: Enter email address and password
     await page.getByTestId('email').fill('customer3@practicesoftwaretesting.com');
     await page.getByTestId('password').fill('pass123');
 
-    //Paso #4: Clic en el botón "Iniciar sesión"
+    // Step #4: Click the "Sign in" button
     await page.getByTestId('login-submit').click();
 
-    //Paso #5: Validar que el usuario se encuentre en la pantalla de "Home"
+   // Step #5: Validate that the user is redirected to the "Home" page
     await expect(page.getByTestId('page-title')).toContainText('My account')
 });

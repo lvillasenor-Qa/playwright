@@ -1,9 +1,11 @@
 {
-  "name": "playwright",
+  "name": "playwright-login-testing",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright automation practice for validating a user login flow",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
