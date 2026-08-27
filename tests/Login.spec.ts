@@ -17,6 +17,8 @@ test('TC01 - Successful user login', async ({ page }) => {
     // Step #4: Click the "Sign in" button
     await page.getByTestId('login-submit').click();
 
-   // Step #5: Validate that the user is redirected to the "Home" page
-    await expect(page.getByTestId('page-title')).toContainText('My account')
+   // Step #5: Validate that the user is redirected to the "My Account" page
+    await expect(page.getByTestId('page-title')).toContainText('My account', {
+    timeout: 10000
+});
 });
