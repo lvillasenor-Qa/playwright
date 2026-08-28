@@ -34,6 +34,11 @@ The test is configured to run against:
 
 **3/3 tests passed successfully.** ✅
 
+GitHub Actions
+
+Playwright HTML Report
+
+
 ## 🎯 What This Practice Demonstrates
 
 * UI test automation with Playwright
