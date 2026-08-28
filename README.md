@@ -34,19 +34,6 @@ The test is configured to run against:
 
 **3/3 tests passed successfully.** ✅
 
-## 📂 Project Structure
-
-```text
-playwright/
-├── tests/
-│   └── Login.spec.ts
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── playwright.config.ts
-└── README.md
-```
-
 ## 🎯 What This Practice Demonstrates
 
 * UI test automation with Playwright
