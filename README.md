@@ -35,9 +35,10 @@ The test is configured to run against:
 **3/3 tests passed successfully.** ✅
 
 GitHub Actions
+![GitHub Actions - Playwright Tests](./docs/images/github-actions.png)
 
 Playwright HTML Report
-
+![Playwright HTML Report](./docs/images/playwright-report.png)
 
 ## 🎯 What This Practice Demonstrates
 
